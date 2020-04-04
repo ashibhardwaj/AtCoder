@@ -1,0 +1,14 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+	// your code goes here
+	long long n, k;
+	cin>>n>>k;
+	if(n>k) n=n%k;
+	if(n< abs(n-k))
+		cout<<n;
+	else
+		cout<<abs(n-k);
+	return 0;
+}
